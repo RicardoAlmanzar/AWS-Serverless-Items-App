@@ -67,6 +67,24 @@ During implementation, several issues had to be diagnosed and corrected:
 - **Frontend build inconsistency:** rebuilt and redeployed the client to ensure the correct API endpoint was used
 - **Response shape mismatch:** aligned frontend data handling with the actual backend response
 
+
+---
+
+# 8) Add “Tech Stack” with table
+Se ve más profesional que una lista simple.
+
+```md
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React, TypeScript, Axios, Semantic UI |
+| Hosting | Amazon S3 |
+| API | Amazon API Gateway |
+| Compute | AWS Lambda |
+| Database | Amazon DynamoDB |
+| Infrastructure as Code | AWS CloudFormation |
+
 ## Deployment Summary
 
 ### Backend
