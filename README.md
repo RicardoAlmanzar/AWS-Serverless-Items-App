@@ -70,20 +70,19 @@ During implementation, several issues had to be diagnosed and corrected:
 
 ---
 
-# 8) Add “Tech Stack” with table
-Se ve más profesional que una lista simple.
+## Deployment Summary
 
-```md
-## Tech Stack
+### Backend
+- CloudFormation stack deployed in AWS
+- Lambda function configured and connected to API Gateway
+- DynamoDB table created for item storage
+- API routes configured for CRUD operations
+- CORS configured for frontend access
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | React, TypeScript, Axios, Semantic UI |
-| Hosting | Amazon S3 |
-| API | Amazon API Gateway |
-| Compute | AWS Lambda |
-| Database | Amazon DynamoDB |
-| Infrastructure as Code | AWS CloudFormation |
+### Frontend
+- React application built for production
+- Static files uploaded to Amazon S3
+- Frontend configured to call the deployed API Gateway endpoint
 
 ## Deployment Summary
 
