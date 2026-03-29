@@ -46,8 +46,6 @@ The application allows users to:
 ---
 
 
-## Architecture
-
 This solution uses a fully serverless AWS architecture:
 
 - **Amazon S3** hosts the frontend as a static website
