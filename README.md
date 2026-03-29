@@ -56,15 +56,54 @@ This solution uses a fully serverless AWS architecture:
 - **Amazon DynamoDB** stores the application data
 - **AWS CloudFormation** provisions the backend resources as Infrastructure as Code
 
-### Request Flow
+## Engineering Challenges Solved
 
-```text
-User Browser
-   ↓
-React Frontend (S3)
-   ↓
-API Gateway
-   ↓
-AWS Lambda
-   ↓
-DynamoDB
+During implementation, several issues had to be diagnosed and corrected:
+
+- **Deprecated Lambda runtime:** updated the function to a supported Node.js runtime
+- **AWS SDK compatibility issue:** replaced outdated SDK usage with the correct current approach
+- **API Gateway routing and integration setup:** validated and corrected route-to-Lambda behavior
+- **CORS configuration mismatch:** fixed the frontend-to-backend origin problem
+- **Frontend build inconsistency:** rebuilt and redeployed the client to ensure the correct API endpoint was used
+- **Response shape mismatch:** aligned frontend data handling with the actual backend response
+
+## Deployment Summary
+
+### Backend
+- CloudFormation stack deployed in AWS
+- Lambda function configured and connected to API Gateway
+- DynamoDB table created for item storage
+- API routes configured for CRUD operations
+- CORS configured for frontend access
+
+### Frontend
+- React application built for production
+- Static files uploaded to Amazon S3
+- Frontend configured to call the deployed API Gateway endpoint
+
+## Local Development
+
+### Frontend Setup
+
+```bash
+cd client
+npm install
+npm start
+
+## What I Learned
+
+Through this project I strengthened practical skills in:
+
+- deploying serverless applications on AWS
+- working with API Gateway and Lambda integrations
+- managing DynamoDB data in a real application flow
+- hosting and configuring static frontend assets in S3
+- handling CORS between independent frontend and backend origins
+- diagnosing cloud deployment issues across multiple AWS services
+- aligning frontend contracts with backend responses
+
+## Author
+
+**Ricardo Almánzar**  
+Software Engineering Student  
+Cloud / Web Development Portfolio Project
