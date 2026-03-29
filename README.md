@@ -91,7 +91,7 @@ During implementation, several issues had to be diagnosed and corrected:
 cd client
 npm install
 npm start
----
+```
 
 ## What I Learned
 
