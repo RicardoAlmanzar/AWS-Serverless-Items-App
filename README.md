@@ -69,21 +69,6 @@ During implementation, several issues had to be diagnosed and corrected:
 
 
 ---
-
-## Deployment Summary
-
-### Backend
-- CloudFormation stack deployed in AWS
-- Lambda function configured and connected to API Gateway
-- DynamoDB table created for item storage
-- API routes configured for CRUD operations
-- CORS configured for frontend access
-
-### Frontend
-- React application built for production
-- Static files uploaded to Amazon S3
-- Frontend configured to call the deployed API Gateway endpoint
-
 ## Deployment Summary
 
 ### Backend
