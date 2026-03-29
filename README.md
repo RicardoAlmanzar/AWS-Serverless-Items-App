@@ -91,6 +91,7 @@ During implementation, several issues had to be diagnosed and corrected:
 cd client
 npm install
 npm start
+---
 
 ## What I Learned
 
@@ -104,6 +105,7 @@ Through this project I strengthened practical skills in:
 - diagnosing cloud deployment issues across multiple AWS services
 - aligning frontend contracts with backend responses
 
+---
 ## Author
 
 **Ricardo Almánzar**  
